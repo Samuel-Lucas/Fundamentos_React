@@ -1,0 +1,23 @@
+.card {
+    border-radius: 10px;
+    border: 3px solid;
+    overflow: hidden;
+    margin: 30px 10px;
+    min-width: 500px;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card .title {
+    padding: 5px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.card .content {
+    flex: 1;    /* == flex-grow (cresce conteúdo)*/
+    background-color: #fff;
+    color: black;
+    padding: 10px;
+}
