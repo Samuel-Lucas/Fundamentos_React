@@ -21,13 +21,17 @@ export default props => {
    
     return (
         <table border="1" style={tableStyle}>
-            <tr>
+            <thead>
                 <th>Id</th>
                 <th>Nome do Produto</th>
                 <th>Preço</th>
-            </tr>
+            </thead>
 
-            { conteudo }
+            <tbody>
+
+                { conteudo }
+
+            </tbody>
         </table>
 
     )

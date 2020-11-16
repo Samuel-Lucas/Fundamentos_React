@@ -10,13 +10,40 @@ import Familia from './components/basicos/familia'
 import Membro from './components/basicos/membro'
 import ListaAlunos from './components/repeticao/listaAlunos'
 import TabelaProdutos from './components/repeticao/tabelaProdutos'
-
+import ParOuImpar from './components/condicional/parOuImpar'
+import UsuarioInfo from './components/condicional/usuarioInfo'
+import DiretaPai from './components/comunicacao/diretaPai'
+import IndiretaPai from './components/comunicacao/indiretaPai'
+import Input from './components/formulario/input'
+import Contador from './components/contador/contador'
 
 export default _ =>    
     <div className="app">
         <h1>Fundamentos React </h1>
 
         <div className="cards">
+
+            <Card titulo="#12 - Contador" cor="#090">
+                <Contador numeroInicial={10} />   
+            </Card>
+
+            <Card titulo="#11 - Componente Controlado">
+                <Input />    
+            </Card>
+
+            <Card titulo="#10 - Comunicação Indireta">
+                <IndiretaPai />    
+            </Card>
+
+            <Card titulo="#09 - Comunicação Direta">
+                <DiretaPai />    
+            </Card>
+
+            <Card titulo="#08 - Renderização Condicional">
+                <ParOuImpar numero={21} />
+                <UsuarioInfo usuario={{ nome: 'Fernando' }}/>
+                <UsuarioInfo usuario={{ email: 'Fer@nando.com' }}/>      
+            </Card>
 
             <Card titulo="#07 - Desafio Repetição" cor="#090">
                 <TabelaProdutos />   
